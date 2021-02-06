@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*
+{
+margin: 0;
+padding: 0;	
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;
+}
+
+header
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 30px 100px;
+	z-index: 1000;
+}
+header.sticky
+{
+	padding: 5px 100px;
+	background: #fff;
+}
+.name
+{
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	align-items: center;
+}
+section{
+	padding: 100px;
+}
+.banner
+{
+	position: relative;
+	min-height: 100vh;
+	background-image: url(banner3.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.banner h2{
+	position: relative;
+	font-family: 'Anton', sans-serif;
+color: #fff;
+	 font-size: 80px;
+ letter-spacing: 10px;
+ font-weight: 900;
+ text-transform: uppercase;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	opacity: 0.8;
+}
+.banner p{
+	position: relative;
+	margin-bottom: 300px;
+	font-family: 'Roboto', sans-serif;
+color: #fff;
+	 font-size: 20px;
+ letter-spacing: 10px;
+ font-weight: 900;
+ text-transform: uppercase;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	opacity: 0.8;
+}
+.banner h3{
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.5em;
+	color: #fff;
+	font-weight: 500;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	opacity: 0.8;
+}
+
+header .logo
+{
+	position: relative;
+ color: #fff;
+ font-family: 'Poppins', sans-serif;
+ text-decoration: none;
+ font-size: 25px;
+ letter-spacing: 2px;
+ font-weight: 700;
+ transition: 0.6s;
+}
+header ul
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li
+{
+	position: relative;
+	list-style: none;
+}
+header ul li a
+{
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s;
+}
+header ul li a.active,
+header ul li a:hover
+{
+ background: #205aff;
+}
+.cabinet{
+	background: #000;
+	color: #fff;
+	min-height: 100vh;
+}
+.mapratique{
+	background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+	color: #000;
+	min-height: 100vh;
+}
+.mapratique .contentbox{
+	padding-left: 40px;
+}
+.content
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contentbox{
+	padding-right: 40px;
+}
+.contentbox p,
+.heading p{
+	line-height: 2em;
+}
+.contentbox h3,
+.contact h2{
+
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.w50{
+	min-width: 50%;
+}
+img{
+	max-width: 100%;
+}
+section img{
+
+box-shadow: 0 4px 25px rgba(14,36,49,.15);
+	border-radius: .5rem;
+	transition: 1s;
+	cursor: pointer;
+}
+section img:hover{
+	transform: scale(1.05);
+}
+section iframe
+{
+	margin-right: 50px;
+}
+
+
+
+header.sticky .logo,
+header.sticky p,
+header.sticky ul li a
+{
+	color: #000;
+}
+
+.heading
+{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+	line-height: 50px;
+}
+.heading h2{
+	font-weight: 600;
+	font-size: 60px;
+	text-transform: uppercase;
+	 font-family: 'Poppins', sans-serif;
+}
+.white{
+	color: #fff;
+}
+.content2
+{
+	display: flex;
+	justify-content: space-between;
+
+}
+.contact
+{
+	padding: 100px;
+	background: #111;
+}
+.formbox
+{
+	min-width: 60%;
+}
+.formbox form
+{
+	display: flex;
+	flex-direction: column;
+}
+.formbox form h3,
+.contactInfo h3
+{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.contactInfo a
+{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.formbox form input,
+.formbox form textarea
+{
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	background: #222;
+	border: none;
+	outline: none;
+	color: #fff;
+	resize: none;
+}
+.formbox form textarea
+{
+	min-height: 200px;
+}
+.formbox form input::placeholder,
+.formbox form textarea::placeholder
+{
+	color: #999;
+}
+.formbox form input[type="submit"]
+{
+	max-width: 100px;
+	background: #2196f3;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.contactInfo
+{
+	min-width: 20%;
+}
+.contactInfoBox
+{
+	position: relative;
+}
+.contactInfoBox .box
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.contactInfoBox .box .icon
+{
+	min-width: 60px;
+	padding-top: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 24px;
+}
+.contactInfoBox .box .text
+{
+	display: flex
+	margin-left: 30px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.google
+{
+	min-width: 20%;
+	position: relative;
+}
+.google h3
+{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+iframe
+{
+	padding-top: 25px;
+}
+.contactInfoBox .box .text h3
+{
+	font-weight: 500;
+	color: #2196f3;
+	margin-bottom: 0;
+}
+@media (max-width: 1280px){
+
+.banner h2{
+	position: relative;
+
+	font-family: 'Anton', sans-serif;
+color: #fff;
+	 font-size: 60px;
+ letter-spacing: 10px;
+ font-weight: 900;
+ text-transform: uppercase;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	opacity: 0.8;
+}
+.banner p{
+	position: relative;
+	margin-bottom: 180px;
+	font-family: 'Roboto', sans-serif;
+color: #fff;
+	 font-size: 15px;
+ letter-spacing: 10px;
+ font-weight: 900;
+ text-transform: uppercase;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	opacity: 0.8;
+}
+.banner h3{
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 500;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	opacity: 0.8;
+}
+}
+
+
+@media screen and (max-width: 1136px){
+	
+
+
+	header, 
+	header.sticky{
+		padding: 20px 50px;
+		z-index: 1000;
+	}
+	.menu{
+		position: fixed;
+		top: 95px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	.menu.active
+	{
+		left: 0;
+	}
+	header ul li a
+	{
+		color: #111;
+		font-size: 25px;
+		margin: 20px;
+	}
+	.toggle{
+		width: 40px;
+		height: 40px;
+		background: url(menu.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	.toggle.active
+	{
+		background: url(close.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		cursor: pointer;
+	}
+
+	header.sticky .toggle{
+		filter: invert(1);
+	}
+	.heading h2{
+		font-size: 24px;
+	}
+	.contentbox h3{
+		font-size: 20px;
+	}
+	.content{
+		flex-direction: column;
+	}
+	.content2{
+		flex-direction: column;
+		align-items: center;
+	}
+	.w50{
+		margin-bottom: 20px;
+	}
+	.contactInfo{
+		margin: 20px 0;
+	}
+	.formbox
+{
+	min-width: 100%;
+}
+
+}
+@media screen and (max-width: 360px){
+
+
+	section{
+	padding: 10px;
+}
+.contact
+{
+	padding: 10px;
+
+}
+	}
